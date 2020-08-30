@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body1">
+    <form (submit)="addProfile()" [formGroup]="Profile">
+        <div class="background-img">
+            <div class="card-container">
+                <div class="upper-box">
+                    <h3 class="name">Please enter your name ?</h3>
+                    <div class="response">
+                        <input type="text" class="form-small" formControlName="name">
+                        <div *ngIf = "submitted && Profile.get('name').errors">
+                            <small class="error" *ngIf="submitted && Profile.get('name').errors?.required"> This field is required </small>
+                        </div>
+                    </div>
+                    <div class="btn-next">
+                        <button class="btn1"> Next </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+    </form>
+    

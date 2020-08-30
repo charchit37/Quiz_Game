@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body1">
+    <form (submit)="addCricketer()" [formGroup]="cricketerGroup">
+        <div class="background-img">
+            <div class="card-container">
+                <div class="upper-box">
+                    <h3 class="name">Who is the best cricketer in the world ?</h3>
+                    <div class="response">
+                        <label> 
+                            <input type="radio"  value="Sachin Tendulkar" formControlName="cricketer" required/>
+                            Sachin Tendulkar 
+                        </label> 
+                        
+                        <label> 
+                            <input type="radio"  value="Virat Kohli" formControlName="cricketer" required class="ml-3"/>
+                            Virat Kohli 
+                        </label>
+                            <br>
+        
+                        <label> 
+                            <input type="radio"  value="Adam Gilchirst" formControlName="cricketer"required/>
+                            Adam Gilchirst 
+                        </label>  
+        
+                        <label> 
+                            <input type="radio" value="Jacques Kallis" formControlName="cricketer" class="ml-4" required/>
+                            Jacques Kallis 
+                        </label>
+                        
+                        <div *ngIf = "submitted && cricketerGroup.get('cricketer').errors">
+                            <small class="error" *ngIf="submitted && cricketerGroup.get('cricketer').errors?.required"> This field is required </small>
+                        </div>
+        
+                    </div>
+                    <div class="btn-next">
+                        <button class="btn1"> Next </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+    </form>

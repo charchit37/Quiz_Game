@@ -1,0 +1,148 @@
+.body1{
+    height: 100vh;
+
+}
+
+.background-img{
+
+    background-image: url("../../assets/images/kelly-sikkema-hjDib8hePtw-unsplash.jpg"); 
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+
+}
+
+
+.card-container{
+
+    width: 540px;
+    height:340px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    background: #5e6f64;
+
+}
+
+
+.upper-box{
+    position: relative;
+    padding: 10px;
+    height: 100px;
+    color: #ffffff;
+}
+.response{
+
+    position: absolute;
+    top: 84%;
+    left: 7%;
+    width: 90%;
+}
+
+.btn-history{
+    position: absolute;
+    top: 290%;
+    left: 6.8%;
+}
+
+.btn-finish{
+    position: absolute;
+    top: 290%;
+    left: 28%;
+}
+
+.btn1{
+
+    padding: 1px 19px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;    
+    font-weight: 500;
+    outline: none;
+    text-decoration: none;
+    background: #ffffff;
+    color: black;
+
+}
+
+
+
+.name{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.que2{
+    letter-spacing: 0.5px;
+    word-spacing: 0.4px;
+}
+
+
+/*-------------------------------Media Query Starts From here ------------------ */
+
+
+@media only screen and (max-width:768px)
+{
+
+    .background-img{
+        width: 100%;
+        background-position: 0%,0%;
+    }
+
+.card-container{
+    width: 245px;
+    height: 430px;
+    transform: translate(-30%,-70%);
+}
+
+.profile-name{
+    font-size: 1.2rem;
+}
+
+
+
+.que2{
+    margin-top:1rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.que3{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.response{
+    width: 100%;
+    left: 4%;
+}
+
+.name{
+    font-size: 2.8rem;
+}
+
+
+.error{
+    font-size: 0.9rem;
+}
+
+
+.btn-history{
+    font-size: 1.2rem;
+    top: 380%;
+    left: 6.5%;
+}
+
+.btn-finish{
+    top: 379.5%;
+    left: 57%;
+}
+
+
+
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="body1">
+        <div class="background-img">
+            <div class="card-container">
+                <div class="upper-box">
+                    <h1 class="name"> Summary </h1>
+                    <div class="response">
+                        <div class="profile-name">  
+                            <h2> Hello {{nameArr[nameArr.length -1].name}}</h2>
+                        </div>
+            
+                        <div class="que2">
+                            <p>Question1: {{question2[question2.length - 1].Question_no_2}}</p>
+                            <p>Ans : {{question2[question2.length - 1].Answere}}</p>
+                        </div>
+            
+                        <div class="que3">
+                            <p> Question2: {{question3[question3.length - 1].Question_no_3}}</p>
+                            <p> Ans : {{question3[question2.length - 1].answere}}</p>
+                        </div>   
+                    </div>
+                    <div class="btn-history">
+                        <a class="btn1" routerLink="/historyPage" > History </a>
+                    </div>
+                    <div class="btn-finish">
+                        <a class="btn1" routerLink="/userProfile"> Finish </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+</body>

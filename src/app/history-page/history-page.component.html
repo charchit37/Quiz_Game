@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+          <div class="user-profile" *ngFor="let c of finalArr">
+              <div class="date">
+                  <h1 class="history">History </h1>
+                  <span class="game-span">{{c.gameNumber}}</span> <span class="date"> : {{c.currentDate}}</span>
+               </div>
+                <div class="name-box">
+                   <p class="name"> <span class="name-span">Name:</span> &nbsp; {{c.name}}</p>
+                </div>
+
+                <div class="que2">
+                    <p> <span class="que"> Que:</span> &nbsp; {{c.que1}}</p>
+                    <p> <span class="ans"> Ans: </span> &nbsp; {{c.ans1}}</p>
+                </div>
+              <div class="que3">
+                  <p> <span class="que"> Que:</span> &nbsp; {{c.que2}}</p>
+                  <p> <span class="ans"> Ans: </span> &nbsp; {{c.ans2}}</p>
+              </div>
+
+              <div class="btn-finish">
+                <a class="btn1" routerLink="/userProfile"> Finish </a>
+            </div>
+          </div> 
+         </div>
+      </div>
+    </div>
+  
+</body>
+</html>

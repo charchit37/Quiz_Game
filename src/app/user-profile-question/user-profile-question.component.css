@@ -1,0 +1,95 @@
+.body1{
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.background-img{
+    background-image: url("../../assets/images/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg"); 
+    height: 100vh;
+    width: 140%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+
+}
+
+
+.card-container{
+
+    width: 350px;
+    height:190px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 1px 10px 1px #000;
+    background: #5e6f64;
+}
+
+
+.upper-box{
+    position: relative;
+    padding: 10px;
+    height: 100px;
+    color: #ffffff;
+}
+.response{
+    position: absolute;
+    top: 65%;
+    width: 60%;
+}
+.form-small{
+    width: 120%;
+    padding: 2px;
+    outline: none;
+}
+
+.btn-next{
+    position: absolute;
+    top: 128%;
+}
+
+.btn1{
+    padding: 1px 19px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1.2rem;    
+    font-weight: 500;
+    outline: none;
+
+}
+
+.error{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ed6663;
+}
+
+
+/*-------------------------------Media Query Starts From here ------------------ */
+
+
+@media only screen and (max-width:768px)
+{
+
+    body{
+        overflow-x: auto;
+    }
+
+    .background-img{
+        width: 100%;
+        background-position: 15%,-30%;
+    }
+.card-container{
+    width: 320px;
+    transform: translate(-30%,-50%);
+}
+.name{
+    font-size: 1.6rem;
+}
+
+
+}
